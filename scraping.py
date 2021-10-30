@@ -36,7 +36,7 @@ def mars_news(browser):
     browser.visit(url)
 
     # Optional delay for loading the page
-    browser.is_element_present_by_css('div.list_text', wait_time=5)
+    browser.is_element_present_by_css('div.list_text', wait_time=10)
 
     # Convert the browser html to a soup object and then quit the browser
     html = browser.html
