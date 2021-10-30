@@ -10,22 +10,23 @@
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     />
     <style>
-      body {background-color: powderblue;}
       h1   {color: blue;}
       p    {color: black;}
       h3   {color: yellowgreen}
       a    {color: limegreen}
-      div  {color: orange}
+      div  {color: rgb(22, 10, 87)}
      </style> 
   </head>
-  <body>
+  <body style="background-color: white">
     <div class="container">
-      <!-- Add Jumbotron to Header -->
-      <div class="jumbotron text-center">
-        <h1>Mission to Mars</h1>
-        <!-- Add a button to activate scraping script -->
-        <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
-      </div>
+        <div class="jumbotron text-center" 
+         style="background-image: url('https://mars.nasa.gov/system/basic_html_elements/20_ISS_moon.jpg'); 
+         background-size: cover; background-position: center; color: white">
+            <h1>Mission to Mars</h1>
+            <p><a class="btn btn-primary btn-lg" href="/scrape"
+                role="button" style="background-color: rgb(223, 215, 215); border: none; color: rgb(22, 10, 87);">Scrape New Data
+            </a></p>
+        </div>
       <!-- Add section for Mars News -->
       <div class="row" id="mars-news">
         <div class="col-md-12">
